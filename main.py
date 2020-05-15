@@ -4,8 +4,8 @@ import updater
 version = "1.1"
 print(f"\tKwyk Solver version {version}")
 
-# Vérification des mises à jour.
-check_for_updates = True
+# Recherche d'une nouvelle mise à jour.
+check_for_updates = False
 if check_for_updates:
     update_info_url = "https://yougi3.github.io/Kwyk-Solver/update_info.json"
     update_info = updater.get_update_info(update_info_url)
