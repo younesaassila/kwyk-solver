@@ -12,7 +12,7 @@ if update_info is not None:
     if input("Souhaitez-vous la télécharger et l'installer ? (o/N) : ").strip().lower() == "o":
       # Téléchargement de la mise à jour.
       print("Téléchargement de la mise à jour...")
-      updater.download_update(update_info["package_url"])
+      updater.update(update_info["download_url"])
 
 while True:
   print()
