@@ -1,31 +1,29 @@
-import updater, solvers
+import updater
+
 
 version = "1.1"
 print(f"\tKwyk Solver version {version}")
 
 # Vérification des mises à jour.
-update_info = updater.get_update_info()
-if update_info is not None:
-  update_version = update_info["version"]
-  if (update_version.strip() != version.strip()):
-    print(f"\n! Une nouvelle mise à jour est disponible (version {update_version}).")
-    if input("Souhaitez-vous la télécharger et l'installer ? (o/N) : ").strip().lower() == "o":
-      updater.update(update_info["download_url"])
+check_for_updates = True
+if check_for_updates:
+    update_info_url = "https://yougi3.github.io/Kwyk-Solver/update_info.json"
+    update_info = updater.get_update_info(update_info_url)
+    if update_info is not None:
+        update_version = update_info["version"]
+        if (update_version.strip() != version.strip()):
+            print(f"\n! Une nouvelle mise à jour est disponible (version {update_version}).")
+            if input("Souhaitez-vous la télécharger et l'installer ? (o/N) : ").strip().lower() == "o":
+                updater.download_and_install(update_info["url"])
+
+supported_ex = (260, 20110, 20116, 20118, 20119, 20124, 20128, 20129, 28036, 28037)
 
 while True:
-  print()
-  ex = input("Entrez un numéro d'exercice : ")
-  if (ex == "20110"):
-    solvers.solver_20110()
-  elif (ex == "20118"):
-    solvers.solver_20118()
-  elif (ex == "20119"):
-    solvers.solver_20119()
-  elif (ex == "20128"):
-    solvers.solver_20128()
-  elif (ex == "20129"):
-    solvers.solver_20129()
-  elif (ex == "28036" or ex == "28037"):
-    solvers.solver_28036_28037()
-  else:
-    print("Exercice non supporté par le solveur.")
+    print(f"\nExercices supportés : {supported_ex}")
+    ex = int(input("Entrez le numéro de l'exercice : "))
+    if not ex in supported_ex:
+        print("Exercice non supporté par le solveur.")
+    else:
+        print()
+        exec(f"from solvers import solver_{ex}")
+        exec(f"solver_{ex}.solve()")
