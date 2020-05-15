@@ -1,21 +1,22 @@
 import numpy as np
 from fractions import Fraction
+from functions import int_input
 
 
 def solve():
     print("Les coefficients de l'équation paramétrique donnée ax + by + cz + d = 0 sont :")
-    a = int(input("a = "))
-    b = int(input("b = "))
-    c = int(input("c = "))
-    d = int(input("d = "))
+    a = int_input("a = ")
+    b = int_input("b = ")
+    c = int_input("c = ")
+    d = int_input("d = ")
     print("Les coordonnées du point A sont :")
-    Ax = int(input("Ax = "))
-    Ay = int(input("Ay = "))
-    Az = int(input("Az = "))
+    Ax = int_input("Ax = ")
+    Ay = int_input("Ay = ")
+    Az = int_input("Az = ")
     print("Les coordonnées du point B sont :")
-    Bx = int(input("Bx = "))
-    By = int(input("By = "))
-    Bz = int(input("Bz = "))
+    Bx = int_input("Bx = ")
+    By = int_input("By = ")
+    Bz = int_input("Bz = ")
     # Calcul des coordonnées du vecteur AB
     ABx = Bx - Ax
     ABy = By - Ay
