@@ -1,0 +1,5 @@
+__pycache__/
+.vscode/
+releases/
+main.py
+solvers.py
