@@ -22,5 +22,5 @@ def solve():
         # La droite a pour vecteur directeur un vecteur perpendiculaire au deux vecteurs normaux (produit vectoriel)
         vector_product = np.cross((a1, b1, c1), (a2, b2, c2))
         print(f"Les équations sont différentes, le système représente donc une droite (ou l'ensemble vide)")
-        print(f"Un vecteur directeur de cette droite est u({str(vector_product).replace(' ', '; ')[1:-1]})")
+        print(f"Un vecteur directeur de cette droite est u({vector_product[0]}; {vector_product[1]}; {vector_product[2]})")
 

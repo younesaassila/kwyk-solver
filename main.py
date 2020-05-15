@@ -2,11 +2,11 @@ import updater
 from functions import int_input
 
 
-version = "1.1"
+version = "1.2dev"
 print(f"\tKwyk Solver version {version}")
 
 # Recherche d'une nouvelle mise à jour.
-check_for_updates = True
+check_for_updates = not version.endswith("dev")
 if check_for_updates:
     update_info_url = "https://yougi3.github.io/Kwyk-Solver/update_info.json"
     update_info = updater.get_update_info(update_info_url)
@@ -18,6 +18,9 @@ if check_for_updates:
                 updater.download_and_install(update_info["url"])
             else:
                 print("Mise à jour ignorée.")
+else:
+    print("\n! Avertissement : Cette version est une version de développement.")
+    print("La recherche de mise à jour est ainsi désactivée.")
 
 supported_ex = (260, 20110, 20116, 20118, 20119, 20124, 20128, 20129, 28036, 28037)
 
