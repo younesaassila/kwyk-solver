@@ -1,6 +1,7 @@
 # Kwyk Solver
 
 Kwyk Solver est un solveur d'exercices pour le [site web Kwyk](https://www.kwyk.fr/).
+
 Celui-ci est écrit en Python 3.8 et nécessite les modules complémentaires `numpy` et `requests`.
 
 ## Installation
@@ -8,6 +9,7 @@ Celui-ci est écrit en Python 3.8 et nécessite les modules complémentaires `nu
 ### Téléchargement du programme
 
 Rendez-vous dans l'onglet 'Releases' de cette page de projet et téléchargez la version la plus récente.
+
 Celle-ci se présentera sous la forme d'un dossier compressé d'extension `.zip`.
 
 Une fois téléchargé, pensez à décompresser le dossier ZIP.
@@ -19,7 +21,9 @@ Assurez-vous d'avoir installé au préalable Python 3.8 ou ultérieur. Si ce n'e
 Lors de l'installation sur Windows, assuez-vous de cocher la case "Add Python 3.8 to PATH" sur la première page de l'installeur.
 
 Une fois cette première terminée, ouvrez l'invite de commandes Windows (`cmd.exe`) ou le PowerShell. Sur macOS, ouvrez l'application Terminal.
+
 Tapez la commande suivante : `python --version`
+
 Si celle-ci vous retourne un numéro de version, comme par exemple `Python 3.8.3`, Python s'est installé avec succès et vous pouvez continuer la procédure. Si vous obtenez une erreur ou un autre message, n'hésitez pas à demander de l'aide en vous rendant dans l'onglet 'Issues' de cette page de projet.
 
 ### Installation des modules requis au fonctionnement du programme
@@ -35,7 +39,9 @@ Si celui-ci vous indique que les modules requis se sont correctement installés 
 #### Méthode 2
 
 Sur Windows, ouvrez l'invite de commandes (`cmd.exe`) ou le PowerShell.
+
 Sur macOS, ouvrez l'application Terminal.
+
 Tapez les commandes suivantes :
 
 - `python -m pip install numpy`
@@ -46,11 +52,13 @@ Si vous n'arrivez toujours pas à installer les modules requis au fonctionnement
 ## Lancement du programme
 
 Sur Windows, exécutez le fichier nommé `Kwyk_Solver_Windows.cmd`.
+
 Sur macOS, ouvrez le fichier `main.py` avec l'application PythonLauncher.
 
 ## Utilisation du programme
 
 Le programme vous propose une liste d'exercices pour lesquels des solveurs ont été écrits.
+
 Tapez simplement le numéro de l'exercice que vous souhaitez résoudre et suivez les instructions à l'écran.
 
 ## Mises à jour du programme
