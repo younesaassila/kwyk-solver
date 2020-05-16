@@ -34,7 +34,7 @@ Si vous êtes sur macOS, passez à la deuxième méthode.
 
 Sur Windows, rendez-vous dans le dossier contenant les fichiers du programme et exécutez le fichier nommé `Installation_Windows.cmd`.
 
-Si celui-ci vous indique que les modules requis se sont correctement installés ou étaient déjà installés, vous pouvez continuer la suite de la procédure. Autrement, essayez la méthode 2.
+Si celui-ci vous indique que les modules complémentaires requis se sont correctement installés ou étaient déjà installés, vous pouvez continuer la suite de la procédure. Autrement, essayez la méthode 2.
 
 #### Méthode 2
 
@@ -47,7 +47,7 @@ Tapez les commandes suivantes :
 - `python -m pip install numpy`
 - `python -m pip install requests`
 
-Si vous n'arrivez toujours pas à installer les modules requis au fonctionnement du programme, demandez de l'aide dans l'onglet 'Issues' de cette page de projet.
+Si vous n'arrivez toujours pas à installer les modules complémentaires requis au fonctionnement du programme, demandez de l'aide dans l'onglet 'Issues' de cette page de projet.
 
 ## Lancement du programme
 
@@ -61,7 +61,7 @@ Le programme vous propose une liste d'exercices pour lesquels des solveurs ont �
 
 Tapez simplement le numéro de l'exercice que vous souhaitez résoudre et suivez les instructions à l'écran.
 
-## Mises à jour du programme
+## Mise à jour du programme
 
 Lorsqu'une mise à jour est disponible, le programme vous en avertira et vous proposera de la télécharger et de l'installer. Vous pouvez refuser la procédure en appuyant sur la touche `Entrée` ou l'accepter en appuyant sur la touche `o` puis `Entrée`.
 
@@ -79,5 +79,5 @@ Pour ajouter le support d'un exercice, veillez à :
 
 - Ajoutez le numéro de l'exercice en question à la liste `supported_ex` située dans le fichier `main.py` (toujours en restant dans les parenthèses !),
 - Ajouter un fichier dans le dossier `solvers` nommé `solver_`(le numéro de l'exercice va ici)`.py`,
-- Dans ce fichier, importez les modules nécessaires à sa conception (veuillez néanmoins éviter de rajouter de nouvelles dépendances au programme),
+- Dans ce fichier, importez les modules nécessaires à sa conception (veuillez néanmoins éviter d'ajouter de nouvelles dépendances au programme),
 - Dans ce fichier, à la suite de ces importations, créez une fonction `solve()`. Celle-ci contient toute la logique du solveur en passant de la récupération de données avec `input()` au traitement des données pour au final afficher les résultats de l'exercice avec `print()`.

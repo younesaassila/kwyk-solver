@@ -14,10 +14,11 @@ def solve():
     b2 = int_input("b = ")
     c2 = int_input("c = ")
     d2 = int_input("d = ")
-    # Cas du plan
+    
+    # Cas du plan :
     if ((a1 / a2) == (b1 / b2) == (c1 / c2) == (d1 / d2)):
         print(f"Les équations sont équivalentes, le système représente donc un plan de vecteur normal n({a1}; {b1}; {c1})")
-    # Cas de la droite
+    # Cas de la droite :
     else:
         # La droite a pour vecteur directeur un vecteur perpendiculaire au deux vecteurs normaux (produit vectoriel)
         vector_product = np.cross((a1, b1, c1), (a2, b2, c2))
