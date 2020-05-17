@@ -2,7 +2,7 @@ import updater
 from functions import int_input
 
 
-version = "1.2dev"
+version = "1.2"
 print(f"\tKwyk Solver version {version}")
 
 # Vérification de la disponibilité d'une nouvelle version.
