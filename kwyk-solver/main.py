@@ -15,13 +15,13 @@ if not version.endswith("dev"):
     if update_info is not None:
         update_version = update_info["version"]
         if (update_version.strip() != version.strip()):
-            print(f"\n\t! Une nouvelle mise à jour est disponible (version {update_version}).")
+            print(f"\n(!) Une nouvelle mise à jour est disponible (version {update_version}).")
             if input("Souhaitez-vous la télécharger et l'installer ? (o/N) : ").strip().lower() == "o":
                 updater.download_and_install(update_info["url"])
             else:
                 print("Mise à jour ignorée.")
 else:
-    print("\n\t! Avertissement : Cette version est une version de développement.")
+    print("\n(!) Avertissement : Cette version est une version de développement.")
     print("La recherche de mise à jour est ainsi désactivée.")
 
 # Vérifie la présence de fichiers inutilisés de versions antérieures, les
