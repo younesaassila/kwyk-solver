@@ -32,7 +32,7 @@ Si celle-ci vous retourne un numéro de version, comme par exemple `Python 3.8.3
 
 Si vous êtes sur macOS, passez à la deuxième méthode.
 
-Sur Windows, rendez-vous dans le dossier contenant les fichiers du programme et exécutez le fichier nommé `Installation_Windows.cmd`.
+Sur Windows, rendez-vous dans le dossier contenant les fichiers du programme et exécutez le fichier nommé `Installer Kwyk Solver.cmd`.
 
 Si celui-ci vous indique que les modules complémentaires requis se sont correctement installés ou étaient déjà installés, vous pouvez continuer la suite de la procédure. Autrement, essayez la méthode 2.
 
@@ -51,9 +51,9 @@ Si vous n'arrivez toujours pas à installer les modules complémentaires requis 
 
 ## Lancement du programme
 
-Sur Windows, exécutez le fichier nommé `Kwyk_Solver_Windows.cmd`.
+Sur Windows, exécutez le fichier nommé `Démarrer Kwyk Solver`.
 
-Sur macOS, ouvrez le fichier `main.py` avec l'application PythonLauncher.
+Sur macOS, ouvrez le fichier `main.py` situé dans le répertoire `solvers` avec l'application PythonLauncher.
 
 ## Utilisation du programme
 
