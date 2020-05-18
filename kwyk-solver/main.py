@@ -1,10 +1,9 @@
 import updater
-from functions import int_input
+from functions import int_input, rreplace
 
 
 version = "1.3dev"
-print("Kwyk Solver".center(80).rstrip())
-print(f"Version {version}".center(80).rstrip())
+print(f"Kwyk Solver {version}")
 
 # Vérification de la disponibilité d'une nouvelle version.
 # (Cette vérification ne s'effectue que si la version utilisée n'est pas
@@ -16,12 +15,12 @@ if not version.endswith("dev"):
         update_version = update_info["version"]
         if (update_version.strip() != version.strip()):
             print(f"\n(!) Une nouvelle mise à jour est disponible (version {update_version}).")
-            if input("Souhaitez-vous la télécharger et l'installer ? (o/N) : ").strip().lower() == "o":
+            if input("Souhaitez-vous que le programme se mette à jour ? (o/N) : ").strip().lower() == "o":
                 updater.download_and_install(update_info["url"])
             else:
                 print("Mise à jour ignorée.")
 else:
-    print("\n(!) Avertissement : Cette version est une version de développement.")
+    print("\n(!) Cette version est une version de développement.")
     print("La recherche de mise à jour est ainsi désactivée.")
 
 # Vérifie la présence de fichiers inutilisés de versions antérieures, les
@@ -30,8 +29,8 @@ updater.file_cleanup()
 
 # Boucle principale du programme : c'est ici que vous pouvez activer le
 # support d'un nouvel exercice par le programme.
-supported_ex = (260, 20110, 20116, 20118, 20119, 20124, 20128, 20129, 28036, 28037)
-print(f"\nExercices supportés : {str(supported_ex)[1:-1]}")
+supported_ex = [260, 20110, 20116, 20118, 20119, 20124, 20128, 20129, 28036, 28037]
+print(f"\nExercices supportés : {rreplace(str(supported_ex.sort()), ',', ' et', 1)[1:-1]}")
 
 while True:
     print()
@@ -41,4 +40,4 @@ while True:
         exec(f"from solvers import solver_{ex}")
         exec(f"solver_{ex}.solve()")
     else:
-        print("Exercice non supporté par le solveur.")
+        print("Exercice non supporté par le solveur !")
