@@ -30,7 +30,8 @@ updater.file_cleanup()
 # Boucle principale du programme : c'est ici que vous pouvez activer le
 # support d'un nouvel exercice par le programme.
 supported_ex = [260, 20110, 20116, 20118, 20119, 20124, 20128, 20129, 28036, 28037]
-print(f"\nExercices supportés : {rreplace(str(supported_ex.sort()), ',', ' et', 1)[1:-1]}")
+supported_ex.sort()
+print(f"\nExercices supportés : {rreplace(str(supported_ex), ',', ' et', 1)[1:-1]}")
 
 while True:
     print()
