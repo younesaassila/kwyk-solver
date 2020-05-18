@@ -32,7 +32,7 @@ Si celle-ci vous retourne un numéro de version, comme par exemple `Python 3.8.3
 
 Si vous êtes sur macOS, passez à la deuxième méthode.
 
-Sur Windows, rendez-vous dans le dossier contenant les fichiers du programme et exécutez le fichier nommé `Installation_Windows.cmd`.
+Sur Windows, rendez-vous dans le dossier contenant les fichiers du programme et exécutez le fichier nommé `Installer Kwyk Solver.cmd`.
 
 Si celui-ci vous indique que les modules complémentaires requis se sont correctement installés ou étaient déjà installés, vous pouvez continuer la suite de la procédure. Autrement, essayez la méthode 2.
 
@@ -51,9 +51,9 @@ Si vous n'arrivez toujours pas à installer les modules complémentaires requis 
 
 ## Lancement du programme
 
-Sur Windows, exécutez le fichier nommé `Kwyk_Solver_Windows.cmd`.
+Sur Windows, exécutez le fichier nommé `Démarrer Kwyk Solver`.
 
-Sur macOS, ouvrez le fichier `main.py` avec l'application PythonLauncher.
+Sur macOS, ouvrez le fichier `main.py` situé dans le répertoire `solvers` avec l'application PythonLauncher.
 
 ## Utilisation du programme
 
@@ -78,6 +78,6 @@ Vous avez la possibilité de collaborer au projet en effectuant un *fork* du *re
 Pour ajouter le support d'un exercice, veillez à :
 
 - Ajoutez le numéro de l'exercice en question à la liste `supported_ex` située dans le fichier `main.py` (toujours en restant dans les parenthèses !),
-- Ajouter un fichier dans le dossier `solvers` nommé `solver_`(le numéro de l'exercice va ici)`.py`,
+- Ajouter un fichier dans le dossier `solvers` nommé `solver_`*(le numéro de l'exercice va ici)*`.py`,
 - Dans ce fichier, importez les modules nécessaires à sa conception (veuillez néanmoins éviter d'ajouter de nouvelles dépendances au programme),
 - Dans ce fichier, à la suite de ces importations, créez une fonction `solve()`. Celle-ci contient toute la logique du solveur en passant de la récupération de données avec `input()` au traitement des données pour au final afficher les résultats de l'exercice avec `print()`.
