@@ -65,7 +65,7 @@ Tapez simplement le numéro de l'exercice que vous souhaitez résoudre et suivez
 
 Lorsqu'une mise à jour est disponible, le programme vous en avertira et vous proposera de la télécharger et de l'installer. Vous pouvez refuser la procédure en appuyant sur la touche `Entrée` ou l'accepter en appuyant sur la touche `o` puis `Entrée`.
 
-## Rapports de bugs ou demandes d'aide
+## Rapports de bugs et demandes d'aide
 
 Pour tout rapport d'erreur ou demande d'aide, veuillez vous rendre dans l'onglet 'Issues' de cette page de projet.
 
