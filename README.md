@@ -77,7 +77,7 @@ Vous avez la possibilité de collaborer au projet en effectuant un *fork* du *re
 
 Pour ajouter le support d'un exercice, veillez à :
 
-- Ajoutez le numéro de l'exercice en question à la liste `supported_ex` située dans le fichier `main.py` (toujours en restant dans les parenthèses !),
+- Ajoutez le numéro de l'exercice en question à la liste `supported_ex` située dans le fichier `main.py` (toujours en restant dans les crochets !),
 - Ajouter un fichier dans le dossier `solvers` nommé `solver_`*(le numéro de l'exercice va ici)*`.py`,
 - Dans ce fichier, importez les modules nécessaires à sa conception (veuillez néanmoins éviter d'ajouter de nouvelles dépendances au programme),
 - Dans ce fichier, à la suite de ces importations, créez une fonction `solve()`. Celle-ci contient toute la logique du solveur en passant de la récupération de données avec `input()` au traitement des données pour au final afficher les résultats de l'exercice avec `print()`.
