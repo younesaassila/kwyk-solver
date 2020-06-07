@@ -8,7 +8,7 @@ Celui-ci est écrit en Python 3.8 et nécessite les modules complémentaires `nu
 
 ### Téléchargement du programme
 
-Rendez-vous dans l'onglet 'Releases' de cette page de projet et téléchargez la version la plus récente.
+Rendez-vous dans l'onglet "Releases" de cette page de projet et téléchargez la version la plus récente.
 
 Celle-ci se présentera sous la forme d'un dossier compressé d'extension `.zip`.
 
@@ -24,7 +24,7 @@ Une fois cette première terminée, ouvrez l'invite de commandes Windows (`cmd.e
 
 Tapez la commande suivante : `python --version`
 
-Si celle-ci vous retourne un numéro de version, comme par exemple `Python 3.8.3`, Python s'est installé avec succès et vous pouvez continuer la procédure. Si vous obtenez une erreur ou un autre message, n'hésitez pas à demander de l'aide en vous rendant dans l'onglet 'Issues' de cette page de projet.
+Si celle-ci vous retourne un numéro de version, comme par exemple `Python 3.8.3`, Python s'est installé avec succès et vous pouvez continuer la procédure. Si vous obtenez une erreur ou un autre message, n'hésitez pas à demander de l'aide en vous rendant dans l'onglet "Issues" de cette page de projet.
 
 ### Installation des modules requis au fonctionnement du programme
 
@@ -47,7 +47,7 @@ Tapez les commandes suivantes :
 - `python -m pip install numpy`
 - `python -m pip install requests`
 
-Si vous n'arrivez toujours pas à installer les modules complémentaires requis au fonctionnement du programme, demandez de l'aide dans l'onglet 'Issues' de cette page de projet.
+Si vous n'arrivez toujours pas à installer les modules complémentaires requis au fonctionnement du programme, demandez de l'aide dans l'onglet "Issues" de cette page de projet.
 
 ## Lancement du programme
 
@@ -67,7 +67,7 @@ Lorsqu'une mise à jour est disponible, le programme vous en avertira et vous pr
 
 ## Rapports de bugs et demandes d'aide
 
-Pour tout rapport d'erreur ou demande d'aide, veuillez vous rendre dans l'onglet 'Issues' de cette page de projet.
+Pour tout rapport d'erreur ou demande d'aide, veuillez vous rendre dans l'onglet "Issues" de cette page de projet.
 
 ## Collaborer au projet
 
