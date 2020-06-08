@@ -17,5 +17,5 @@ def solve():
         u -= 0.001 #idem quand trop grande
 
     u = round(u, 2)
-    print(f"\nu = {u}")
+    print(f"\nLa valeur de u est {u}")
 
