@@ -49,7 +49,7 @@ for file in os.listdir(solvers_directory_path):
         supported_ex.append(int(solver_filename_match.group(1)))
 # On trie la liste dans l'ordre croissant et on l'affiche à l'utilisateur.
 supported_ex.sort()
-print(f"\nExercices supportés : {rreplace(str(supported_ex), ',', ' et', 1)[1:-1]}")
+print(f"\nExercices supportés : {rreplace(str(supported_ex), ',', ' et', 1)[1:-1]}.")
 
 while True:
     prompt = "Entrez le numéro de l'exercice : "
