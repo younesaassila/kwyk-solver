@@ -1,8 +1,10 @@
 import updater
+import os
+import re
 from functions import int_input, rreplace
 
 
-version = "1.3.1"
+version = "1.4dev"
 print("Kwyk Solver")
 print(f"Version {version}")
 
@@ -23,14 +25,29 @@ if not version.endswith("dev"):
 else:
     print("\n/!\\ Cette version est une version de développement.")
     print("La recherche de mise à jour est ainsi désactivée.")
-
 # Vérifie la présence de fichiers inutilisés de versions antérieures, les
 # supprime si possible.
 updater.file_cleanup()
 
-# Boucle principale du programme : c'est ici que vous pouvez activer le
-# support d'un nouvel exercice par le programme.
-supported_ex = [260, 20110, 20116, 20118, 20119, 20124, 20128, 20129, 28036, 28037, 2226, 2227, 2250, 2259, 2260]
+if os.path.isdir(f"{os.curdir}/kwyk-solver/solvers/"):
+    solvers_directory_path = f"{os.curdir}/kwyk-solver/solvers/"
+else:
+    # L'utilisateur a lancé le programme en exécutant le fichier main.py.
+    # Bien que cela n'est pas recommandé, nous supportons encore pour
+    # le moment ce scénario.
+    solvers_directory_path = f"{os.curdir}/solvers/"
+
+# Affichage de la liste des exercices supportés en se basant sur les fichiers
+# présents dans le dossier 'solvers'.
+supported_ex = []
+solver_filename_pattern = "solver_([0123456789]+)\.py"
+for file in os.listdir(solvers_directory_path):
+    solver_filename_match = re.match(solver_filename_pattern, file)
+    if solver_filename_match:
+        # On récupère le numéro de l'exercice, celui-ci étant inclus dans
+        # le nom du fichier.
+        supported_ex.append(int(solver_filename_match.group(1)))
+# On trie la liste dans l'ordre croissant et on l'affiche à l'utilisateur.
 supported_ex.sort()
 print(f"\nExercices supportés : {rreplace(str(supported_ex), ',', ' et', 1)[1:-1]}")
 

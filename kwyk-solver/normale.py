@@ -1,5 +1,6 @@
 import scipy.stats
 
+
 (u, o) = (0,1)
 
 class normale (object):

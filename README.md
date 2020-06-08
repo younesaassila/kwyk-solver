@@ -2,7 +2,7 @@
 
 Kwyk Solver est un solveur d'exercices pour le [site web Kwyk](https://www.kwyk.fr/).
 
-Celui-ci est écrit en Python 3.8 et nécessite les modules complémentaires `numpy` et `requests`.
+Celui-ci est écrit en Python 3.8 et nécessite les modules complémentaires `numpy`, `requests` et `scipy`.
 
 ## Installation
 
@@ -46,6 +46,7 @@ Tapez les commandes suivantes :
 
 - `python -m pip install numpy`
 - `python -m pip install requests`
+- `python -m pip install scipy`
 
 Si vous n'arrivez toujours pas à installer les modules complémentaires requis au fonctionnement du programme, demandez de l'aide dans l'onglet "Issues" de cette page de projet.
 
@@ -77,7 +78,6 @@ Vous avez la possibilité de collaborer au projet en effectuant un *fork* du *re
 
 Pour ajouter le support d'un exercice, veuillez :
 
-- Ajouter le numéro de l'exercice en question à la liste `supported_ex` située dans le fichier `main.py` (tout en restant dans les crochets !),
 - Ajouter un fichier dans le dossier `solvers` nommé `solver_`*numéro de l'exercice*`.py`,
 - Importer dans ce fichier les modules nécessaires à sa conception (évitez néanmoins d'ajouter de nouvelles dépendances au programme),
 - Créer une fonction `solve()` dans ce fichier à la suite de ces importations. Celle-ci contient toute la logique du solveur en passant de la récupération de données avec `input()` au traitement des données pour au final afficher les résultats de l'exercice avec `print()`.
