@@ -1,10 +1,10 @@
 import scipy.stats
 
-parametre = 1
+parametre = 9/4
 
 class exponentielle (object):
     def __init__(self, para):
-        self.expon = scipy.stats.expon(para)
+        self.expon = scipy.stats.expon(scale = 1/para)
 
     def p_X_inf(self,a) : return self.expon.cdf(a)
     def p_X_sup(self,a) : return 1 - self.p_X_inf(a)
@@ -18,4 +18,4 @@ def test_exponentielle(a,b):
     p = expo.p_X_btw(a,b)
     print(p)
 
-test_exponentielle(0,1)
+test_exponentielle(0,4)

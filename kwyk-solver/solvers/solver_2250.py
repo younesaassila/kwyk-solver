@@ -9,7 +9,7 @@ def solve():
     print("La question est P(X <= u) = a")
     a = float_input("a = ")
 
-    u = 0.5001
+    u = 0.5005
     #recherche bourrin à 10^-3 pres, la dichotomie c'est nul anyway
     while norm.p_X_inf(u) < a : u += 0.001 #pousser la limite quand la proba est trop petite
     while norm.p_X_inf(u) > a : u -= 0.001 #idem quand trop grande
