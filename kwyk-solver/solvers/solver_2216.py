@@ -5,7 +5,7 @@ from functions import int_input, float_input
 def solve():
     t = int_input("Entrez le nombre d'années de la mission : ")
 
-    print(f"La probabilité p(x ≤ 13) est égale à 1-e^(-{t}a)")
+    print(f"La probabilité p(x ≤ {t}) est égale à 1-e^(-{t}a)")
 
     l = float_input("Entrez la probabilité maximale de p : ")
 

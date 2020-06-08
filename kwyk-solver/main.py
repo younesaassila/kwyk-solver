@@ -52,8 +52,9 @@ supported_ex.sort()
 print(f"\nExercices supportés : {rreplace(str(supported_ex), ',', ' et', 1)[1:-1]}")
 
 while True:
-    print()
-    ex = int_input("Entrez le numéro de l'exercice : ")
+    prompt = "Entrez le numéro de l'exercice : "
+    print(f"\n{'-' * len(prompt)}\n")
+    ex = int_input(prompt)
     if ex in supported_ex:
         print()
         exec(f"from solvers import solver_{ex}")

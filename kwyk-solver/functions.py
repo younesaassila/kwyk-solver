@@ -29,7 +29,7 @@ def fraction_input(prompt = ""):
             return Fraction(input(prompt)).limit_denominator()
         except ValueError:
             print(
-                "Veuillez entrer un nombre valide (celui-ci peut être sous forme de fraction).")
+                "Veuillez entrer un nombre valide (celui-ci peut être sous forme de fraction, sans espaces).")
             continue
 
 
