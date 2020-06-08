@@ -1,3 +1,12 @@
+from fractions import Fraction
+from functions import int_input, float_input
+
+
 def solve():
-    print("La probabilité p(x ≤ 13) est égale à 1-e^(-13a)")
-    print("L'intervalle est ]0; ln(197/200)/(-13)]")
+    t = int_input("Entrez le nombre d'années de la mission : ")
+
+    print(f"La probabilité p(x ≤ 13) est égale à 1-e^(-{t}a)")
+
+    l = float_input("Entrez la probabilité maximale de p : ")
+
+    print(f"L'intervalle est ]0; ln({Fraction(- l + 1)})/(-{t})]")
