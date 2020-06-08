@@ -2,7 +2,7 @@ import updater
 from functions import int_input, rreplace
 
 
-version = "1.3.1"
+version = "1.4dev"
 print("Kwyk Solver")
 print(f"Version {version}")
 
