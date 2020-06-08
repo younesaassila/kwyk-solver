@@ -15,6 +15,6 @@ def solve():
     elif sign == "<=" or sign == "≤":
         result = Fraction(abs(x - a) * (1 / (b - a))).limit_denominator()
     else:
-        print("Seuls les symboles <= et >= sont acceptés. Veuillez recommencez.")
+        print("Seuls les symboles <= et >= sont acceptés. Veuillez recommencer.")
         return
     print(f"La probabilité P est de {result}")
