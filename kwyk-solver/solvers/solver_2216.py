@@ -7,7 +7,7 @@ def solve():
 
     print(f"La probabilité p(x ≤ {t}) est égale à 1-e^(-{t}a)")
 
-    l = float_input("\nEntrez la probabilité maximale de p : ")
+    l = float_input("\nEntrez la valeur maximale de la probabilité de p : ")
 
-    print(f"L'intervalle est ]0; ln({Fraction(- l + 1)})/(-{t})]")
+    print(f"L'intervalle est ]0; ln({Fraction(- l + 1).limit_denominator()})/(-{t})]")
 
