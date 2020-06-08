@@ -1,9 +1,9 @@
 from fractions import Fraction
-from functions import float_input, get_exponential_distribution_parameter
+from functions import float_input, fraction_input
 
 
 def solve():
-    p = get_exponential_distribution_parameter()
+    p = fraction_input("Entrez le paramètre de la loi exponentielle : ")
     print("Entrez les bornes de l'intervalle P(u ≤ X ≤ v) :")
     u = float_input("u = ")
     v = float_input("v = ")
