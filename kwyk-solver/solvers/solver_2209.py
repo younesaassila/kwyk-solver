@@ -1,20 +1,11 @@
 import math
 from fractions import Fraction
-from functions import int_input
-
-
-def get_exponential_distribution_parameter():
-    while True:
-        try:
-            return Fraction(input("Entrez le paramètre de la loi exponentielle : "))
-        except ValueError:
-            print("Veuillez entrer un nombre valide (celui-ci peut être sous forme de fraction).")
-            continue
+from functions import float_input, get_exponential_distribution_parameter
 
 
 def solve():
     p = get_exponential_distribution_parameter()
-    x = int_input("Entrez le nombre auquel X est comparé : ")
+    x = float_input("Entrez le nombre auquel X est comparé : ")
     sign = input(
         "Le signe de la comparaison dans P() est <= ou >= ? ").strip()
 

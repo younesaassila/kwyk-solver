@@ -1,12 +1,12 @@
 from fractions import Fraction
-from functions import int_input
+from functions import float_input
 
 
 def solve():
     print("Entrez les bornes de l'intervalle [a; b] :")
-    a = int_input("a = ")
-    b = int_input("b = ")
-    x = int_input("Entrez le nombre auquel X est comparé : ")
+    a = float_input("a = ")
+    b = float_input("b = ")
+    x = float_input("Entrez le nombre auquel X est comparé : ")
     sign = input(
         "Le signe de la comparaison dans P() est <= ou >= ? ").strip()
     
