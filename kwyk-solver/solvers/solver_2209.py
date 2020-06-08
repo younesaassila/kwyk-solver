@@ -17,5 +17,5 @@ def solve():
         result = f"1 - e^({exponent})"   
     else:
         result = f"e^({exponent})"
-    print(f"La probabilité P est de {result}")
+    print(f"\nLa probabilité P est de {result}")
 

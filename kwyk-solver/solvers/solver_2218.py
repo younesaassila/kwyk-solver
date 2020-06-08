@@ -16,5 +16,5 @@ def solve():
         result = f"ln({- p + 1})/({- x})"
     else:
         result = f"ln({p})/({- x})"
-    print(f"La paramètre λ est égal à {result}")
+    print(f"\nLa paramètre λ est égal à {result}")
 

@@ -7,5 +7,5 @@ def solve():
     p = fraction_input("p = ")
 
     e = Fraction(1 / p).limit_denominator()
-    print(f"L'espérance mathématique de p est {e}")
+    print(f"\nL'espérance mathématique de p est {e}")
 
