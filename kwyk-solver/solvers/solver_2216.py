@@ -10,3 +10,4 @@ def solve():
     l = float_input("Entrez la probabilité maximale de p : ")
 
     print(f"L'intervalle est ]0; ln({Fraction(- l + 1)})/(-{t})]")
+

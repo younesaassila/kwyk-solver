@@ -1,19 +1,21 @@
 from fractions import Fraction
-from functions import fraction_input
+from functions import int_input, fraction_input
 
 
 def solve():
     p = fraction_input("Entrez le paramètre de la loi exponentielle : ")
     x = fraction_input("Entrez le nombre auquel X est comparé : ")
-    sign = input(
-        "Le signe de la comparaison dans P() est <= ou >= ? ").strip()
+    print("La question est :")
+    print("\t1. P(X <= a)")
+    print("\t2. P(X >= a)")
+    choix = 0
+    while not choix in [1, 2]:
+        choix = int_input("1 ou 2 ? ")
 
     exponent = Fraction(- p * x).limit_denominator()
-    if sign == ">=" or sign == "≥":
-        result = f"e^({exponent})"
-    elif sign == "<=" or sign == "≤":
-        result = f"1 - e^({exponent})"
+    if choix == 1:
+        result = f"1 - e^({exponent})"   
     else:
-        print("Seuls les symboles <= et >= sont acceptés. Veuillez recommencer.")
-        return
+        result = f"e^({exponent})"
     print(f"La probabilité P est de {result}")
+

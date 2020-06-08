@@ -1,5 +1,5 @@
 from fractions import Fraction
-from functions import float_input
+from functions import int_input, float_input
 
 
 def solve():
@@ -7,14 +7,16 @@ def solve():
     a = float_input("a = ")
     b = float_input("b = ")
     x = float_input("Entrez le nombre auquel X est comparé : ")
-    sign = input(
-        "Le signe de la comparaison dans P() est <= ou >= ? ").strip()
+    print("La question est :")
+    print("\t1. P(X <= a)")
+    print("\t2. P(X >= a)")
+    choix = 0
+    while not choix in [1, 2]:
+        choix = int_input("1 ou 2 ? ")
     
-    if sign == ">=" or sign == "≥":
-        result = Fraction(abs(b - x) * (1 / (b - a))).limit_denominator()
-    elif sign == "<=" or sign == "≤":
-        result = Fraction(abs(x - a) * (1 / (b - a))).limit_denominator()
+    if choix == 1:
+        result = Fraction(abs(x - a) * (1 / (b - a))).limit_denominator()  
     else:
-        print("Seuls les symboles <= et >= sont acceptés. Veuillez recommencer.")
-        return
+        result = Fraction(abs(b - x) * (1 / (b - a))).limit_denominator()
     print(f"La probabilité P est de {result}")
+

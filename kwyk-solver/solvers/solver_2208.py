@@ -12,3 +12,4 @@ def solve():
     
     result = Fraction(abs(v - u) * (1 / (b - a))).limit_denominator()
     print(f"La probabilité P est de {result}")
+

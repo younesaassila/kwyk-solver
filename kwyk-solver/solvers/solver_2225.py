@@ -12,3 +12,4 @@ def solve():
     exponent_v = Fraction(- p * v).limit_denominator()
     result = f"e^({exponent_u}) - e^({exponent_v})"
     print(f"La probabilité P est de {result}")
+
