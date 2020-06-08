@@ -1,4 +1,3 @@
-import math
 from fractions import Fraction
 from functions import float_input, get_exponential_distribution_parameter
 
