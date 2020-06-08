@@ -11,7 +11,7 @@ def solve():
     print("2. P(X >= a)")
 
     choix=0
-    while choix is not in [1,2] : choix = int_input("1/2 :")
+    while not choix in [1,2] : choix = int_input("1/2 :")
     a = float_input("a = ")
     
     if choix == 1 : p = round(norm.p_X_inf(a),4)
