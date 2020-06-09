@@ -15,11 +15,10 @@ def solve():
         choix = int_input("1 ou 2 ? ")
     a = float_input("a = ")
     
-    if choix == 1 :
-        p = round(norm.p_X_inf(a),4)
-        print(f"\nP(X <= {a}) = {p}")
-
-    if choix == 2 :
-        p = round(norm.p_X_sup(a),4)
-        print(f"\nP(X >= {a}) = {p}")
+    if choix == 1:
+        p = round(norm.p_X_inf(a), 4)
+        print(f"\nP(X ≤ {a}) = {p}")
+    else:
+        p = round(norm.p_X_sup(a), 4)
+        print(f"\nP(X ≥ {a}) = {p}")
 
