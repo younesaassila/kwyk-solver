@@ -4,7 +4,7 @@ import re
 from functions import int_input, rreplace
 
 
-version = "1.4.2"
+version = "1.4.3"
 print("Kwyk Solver")
 print(f"Version {version}")
 
@@ -60,7 +60,7 @@ while True:
         try:
             exec(f"from solvers import solver_{ex}")
             exec(f"solver_{ex}.solve()")
-        except Exception:
-            print("\n(!) Une erreur est survenue.")
+        except Exception as e:
+            print(f"\n(!) Une erreur est survenue : {str(e)}.")
     else:
         print("\n(!) Exercice non supporté par le solveur.")
