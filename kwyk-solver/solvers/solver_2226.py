@@ -17,8 +17,8 @@ def solve():
     
     if choix == 1:
         p = round(norm.p_X_inf(a), 4)
-    if choix == 2:
+        print(f"\nP(X ≤ {a}) = {p}")
+    else:
         p = round(norm.p_X_sup(a), 4)
-
-    print(f"\nP(X ≤ {a}) = {p}")
+        print(f"\nP(X ≥ {a}) = {p}")
 
