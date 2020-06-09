@@ -56,7 +56,10 @@ while True:
     ex = int_input("Entrez le numéro de l'exercice : ")
     if ex in supported_ex:
         print()
-        exec(f"from solvers import solver_{ex}")
-        exec(f"solver_{ex}.solve()")
+        try:
+            exec(f"from solvers import solver_{ex}")
+            exec(f"solver_{ex}.solve()")
+        except Exception:
+            print("HAAAAAA L'EXO A CRASH DESOLE")
     else:
         print("\n(!) Exercice non supporté par le solveur.")
