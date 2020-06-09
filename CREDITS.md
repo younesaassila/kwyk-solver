@@ -4,5 +4,5 @@
   - Créateur du projet Kwyk Solver
 
 - [Cédric Holocher](https://github.com/cedrichol)
-  - Auteur des solveurs 260, 20116 et 20124
+  - Auteur des solveurs 260, 2226, 2227, 2250, 2259, 2260, 20116 et 20124
   - Aide à la conception du programme

@@ -4,7 +4,7 @@ import re
 from functions import int_input, rreplace
 
 
-version = "1.4dev"
+version = "1.4.1"
 print("Kwyk Solver")
 print(f"Version {version}")
 
@@ -49,11 +49,12 @@ for file in os.listdir(solvers_directory_path):
         supported_ex.append(int(solver_filename_match.group(1)))
 # On trie la liste dans l'ordre croissant et on l'affiche à l'utilisateur.
 supported_ex.sort()
-print(f"\nExercices supportés : {rreplace(str(supported_ex), ',', ' et', 1)[1:-1]}")
+print(f"\nExercices supportés : {rreplace(str(supported_ex), ',', ' et', 1)[1:-1]}.")
 
 while True:
-    print()
-    ex = int_input("Entrez le numéro de l'exercice : ")
+    prompt = "Entrez le numéro de l'exercice : "
+    print(f"\n{'-' * (len(prompt) - 1)}\n")
+    ex = int_input(prompt)
     if ex in supported_ex:
         print()
         try:
