@@ -3,11 +3,13 @@ from functions import int_input, float_input
 
 
 def solve():
-    t = int_input("Entrez le nombre d'années de la mission : ")
+    print("La question est p(x ≤ t)")
+    t = int_input("t = ")
 
     print(f"La probabilité p(x ≤ {t}) est égale à 1-e^(-{t}a)")
 
-    l = float_input("\nEntrez la valeur maximale de la probabilité de p : ")
+    print("\nEntrez la valeur maximale que peut prendre la probabilité p, dans le dernier paragraphe (c'est un nombre décimal)")
+    m = float_input("m = ")
 
-    print(f"L'intervalle est ]0; ln({Fraction(- l + 1).limit_denominator()})/(-{t})]")
+    print(f"L'intervalle est ]0; ln({Fraction(- m + 1).limit_denominator()})/(-{t})]")
 

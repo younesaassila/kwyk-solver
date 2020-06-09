@@ -10,5 +10,5 @@ def solve():
     a = float_input("a = ")
     b = float_input("b = ")
     p = round(norm.p_X_btw(a, b), 4)
-    print(f"\nP({a} <= X <= {b}) = {p}")
+    print(f"\nP({a} ≤ X ≤ {b}) = {p}")
 

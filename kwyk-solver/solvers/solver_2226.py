@@ -7,8 +7,8 @@ def solve():
     o = float_input("o = ")
     norm = normale.normale(u, o)
     print("La question est :")
-    print("\t1. P(X <= a)")
-    print("\t2. P(X >= a)")
+    print("\t1. P(X ≤ a)")
+    print("\t2. P(X ≥ a)")
 
     choix = 0
     while not choix in [1, 2]:
@@ -20,5 +20,5 @@ def solve():
     if choix == 2:
         p = round(norm.p_X_sup(a), 4)
 
-    print(f"\nP(X <= {a}) = {p}")
+    print(f"\nP(X ≤ {a}) = {p}")
 

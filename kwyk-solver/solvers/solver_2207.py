@@ -7,16 +7,16 @@ def solve():
     a = float_input("a = ")
     b = float_input("b = ")
     print("La question est :")
-    print("\t1. P(X <= a)")
-    print("\t2. P(X >= a)")
+    print("\t1. P(X ≤ y)")
+    print("\t2. P(X ≥ y)")
     choix = 0
     while not choix in [1, 2]:
         choix = int_input("1 ou 2 ? ")
-    x = float_input("a = ")
+    y = float_input("y = ")
     
     if choix == 1:
-        result = Fraction(abs(x - a) * (1 / (b - a))).limit_denominator()  
+        result = Fraction(abs(y - a) * (1 / (b - a))).limit_denominator()  
     else:
-        result = Fraction(abs(b - x) * (1 / (b - a))).limit_denominator()
+        result = Fraction(abs(b - y) * (1 / (b - a))).limit_denominator()
     print(f"\nLa probabilité P est de {result}")
 
