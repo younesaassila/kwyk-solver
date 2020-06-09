@@ -14,8 +14,11 @@ def solve():
     while not choix in [1,2] : choix = int_input("1/2 :")
     a = float_input("a = ")
     
-    if choix == 1 : p = round(norm.p_X_inf(a),4)
-    if choix == 2 : p = round(norm.p_X_sup(a),4)
+    if choix == 1 :
+        p = round(norm.p_X_inf(a),4)
+        print(f"\nP(X <= {a}) = {p}")
 
-    print(f"\nP(X <= {a}) = {p}")
+    if choix == 2 :
+        p = round(norm.p_X_sup(a),4)
+        print(f"\nP(X >= {a}) = {p}")
 
