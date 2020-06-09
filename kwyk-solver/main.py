@@ -61,6 +61,6 @@ while True:
             exec(f"from solvers import solver_{ex}")
             exec(f"solver_{ex}.solve()")
         except Exception:
-            print("HAAAAAA L'EXO A CRASH DESOLE")
+            print("\n(!) Une erreur est survenue.")
     else:
         print("\n(!) Exercice non supporté par le solveur.")
