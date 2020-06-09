@@ -18,7 +18,7 @@ Une fois téléchargé, pensez à décompresser le dossier ZIP.
 
 Assurez-vous d'avoir installé au préalable Python 3.8 ou ultérieur. Si ce n'est pas encore le cas, rendez-vous sur le [site web officiel de Python](https://www.python.org/downloads/) et téléchargez la version la plus récente correspondant à votre système d'exploitation.
 
-Lors de l'installation sur Windows, assuez-vous de cocher la case "Add Python 3.8 to PATH" sur la première page de l'installeur.
+Lors de l'installation sur Windows, assurez-vous de cocher la case "Add Python 3.8 to PATH" sur la première page de l'installeur.
 
 Une fois cette première terminée, ouvrez l'invite de commandes Windows (`cmd.exe`) ou le PowerShell. Sur macOS, ouvrez l'application Terminal.
 
