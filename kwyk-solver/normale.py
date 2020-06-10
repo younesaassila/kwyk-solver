@@ -1,7 +1,7 @@
 import scipy.stats
 
+#Moduled'aproximation d'une répartition, normale d'esperance u et d'ECART TYPE o (donc la racine de la variance)
 
-(u, o) = (0,1)
 
 class normale (object):
     def __init__(self, u, o):
@@ -14,7 +14,15 @@ class normale (object):
         if a == b: return 0.0
         return 1 - self.p_X_inf(a) - self.p_X_sup(b)
 
-def test_centreeReduite(a,b):
-    centreeReduite = normale(u,o)
-    p = centreeReduite.p_X_btw(a,b)
-    print(p)
+# EXEMPLE D'UTILISATION
+"""
+(u, o) = (0, 2)  # esperance et ecart type de la loi normale N(u,o²)
+(a, b) = (-4, 4) #
+
+centreeReduite = normale(u,o)
+p = centreeReduite.p_X_inf(a)    #P(X<a)
+p = centreeReduite.p_X_sup(b)    #P(X>b)
+p = centreeReduite.p_X_btw(a,b)  #P(a<X<b) ou P(b<X<a)
+print(p)
+
+"""
