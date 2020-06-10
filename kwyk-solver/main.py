@@ -29,6 +29,21 @@ else:
 # supprime si possible.
 updater.file_cleanup()
 
+
+prompt = "Entrez le numéro de l'exercice : "
+
+#message d'accueil
+print(
+f"""
+{'-' * (len(prompt) - 1)}\n
+Kwyk Solver
+
+Un outil open source pour résoudre vos devoirs Kwyk
+Partagez ce projet avec le monde entier ! (sauf vos professeurs ☻)
+Contribuez et ajoutez des exercices sur : https://github.com/Yougi3/Kwyk-Solver""")
+
+
+
 if os.path.isdir(f"{os.curdir}/kwyk-solver/solvers/"):
     solvers_directory_path = f"{os.curdir}/kwyk-solver/solvers/"
 else:
@@ -40,7 +55,7 @@ else:
 # Affichage de la liste des exercices supportés en se basant sur les fichiers
 # présents dans le dossier 'solvers'.
 supported_ex = []
-solver_filename_pattern = "solver_([0123456789]+)\.py"
+solver_filename_pattern = "solver_([0123456789]+).py"
 for file in os.listdir(solvers_directory_path):
     solver_filename_match = re.match(solver_filename_pattern, file)
     if solver_filename_match:
@@ -52,7 +67,6 @@ supported_ex.sort()
 print(f"\nExercices supportés : {rreplace(str(supported_ex), ',', ' et', 1)[1:-1]}.")
 
 while True:
-    prompt = "Entrez le numéro de l'exercice : "
     print(f"\n{'-' * (len(prompt) - 1)}\n")
     ex = int_input(prompt)
     if ex in supported_ex:
