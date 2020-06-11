@@ -4,7 +4,7 @@ import re
 from functions import int_input, rreplace
 
 
-version = "1.4.3"
+version = "1.5"
 print("Kwyk Solver")
 print(f"Version {version}")
 
@@ -29,6 +29,19 @@ else:
 # supprime si possible.
 updater.file_cleanup()
 
+
+prompt = "Entrez le numéro de l'exercice : "
+
+# Message d'accueil.
+print(
+f"""
+{'-' * (len(prompt) - 1)}\n
+Kwyk Solver
+
+Un outil open source pour résoudre vos devoirs Kwyk.
+Partagez ce projet avec le monde entier ! (sauf avec vos professeurs ;)...)
+Contribuez et ajoutez des exercices sur https://github.com/Yougi3/Kwyk-Solver""")
+
 if os.path.isdir(f"{os.curdir}/kwyk-solver/solvers/"):
     solvers_directory_path = f"{os.curdir}/kwyk-solver/solvers/"
 else:
@@ -51,8 +64,8 @@ for file in os.listdir(solvers_directory_path):
 supported_ex.sort()
 print(f"\nExercices supportés : {rreplace(str(supported_ex), ',', ' et', 1)[1:-1]}.")
 
+
 while True:
-    prompt = "Entrez le numéro de l'exercice : "
     print(f"\n{'-' * (len(prompt) - 1)}\n")
     ex = int_input(prompt)
     if ex in supported_ex:

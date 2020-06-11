@@ -12,7 +12,7 @@ def get_update_info(url):
     if response.ok:
         return response.json()
     else:
-        print("\n! La recherche de mise à jour a échoué.")
+        print("\n(!) La recherche de mise à jour a échoué.")
         return None
 
 
@@ -27,6 +27,7 @@ def download_and_install(download_url):
     print("La mise à jour est terminée ! Le programme doit redémarrer.")
     input("Appuyez sur une touche pour le fermer puis réouvrez-le manuellement.")
     sys.exit("Le programme s'arrête...")
+
 
 # Supprime les fichiers inutilisés de versions antérieures.
 def file_cleanup():
