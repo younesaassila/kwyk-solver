@@ -5,7 +5,7 @@ def solve():
     print("X suit la loi normale N(u, o) :")
     v = float_input("u = ")
     o = float_input("o = ")
-    norm = normale.normale(v, o)
+    norm = normale.Normale(v, o)
     print(f"La question est P({v}-u < X < {v}+u) = a")
     a = float_input("a = ")
 
