@@ -70,9 +70,11 @@ Lorsqu'une mise à jour est disponible, le programme vous en avertira et vous pr
 
 Pour tout rapport d'erreur ou demande d'aide, veuillez vous rendre dans l'onglet "Issues" de cette page de projet.
 
-## Collaborer au projet
+## Contribuer au projet
 
-Vous avez la possibilité de collaborer au projet en effectuant un *fork* du *repo* puis en proposant vos modifications grâce à une *pull request*.
+Vous avez la possibilité de contribuer au projet en effectuant un *fork* du *repo* puis en proposant vos modifications grâce à une *pull request*.
+
+Pour plus d'information sur le fonctionnement de Git et de GitHub, nous vous recommandons [la playlist YouTube dédiée à ce topic sur la chaîne The Coding Train (anglais)](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV).
 
 ### Ajouter le support d'un exercice
 
