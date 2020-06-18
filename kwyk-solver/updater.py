@@ -53,4 +53,3 @@ def file_cleanup():
         if os.path.exists(installBatchFile):
             os.remove(installBatchFile)
         print("\n(i) Des fichiers inutilisés appartenants à des versions antérieures ont été automatiquement supprimés.")
-

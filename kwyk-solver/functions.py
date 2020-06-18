@@ -3,7 +3,7 @@ from fractions import Fraction
 
 # Demande à l'utilisateur l'entrée d'un nombre entier tant que celui-ci n'entre
 # pas un nombre entier valide.
-def int_input(prompt = ""):
+def int_input(prompt=""):
     while True:
         try:
             return int(input(prompt))
@@ -13,7 +13,7 @@ def int_input(prompt = ""):
 
 # Demande à l'utilisateur l'entrée d'un nombre décimal tant que celui-ci
 # n'entre pas un nombre décimal valide.
-def float_input(prompt = ""):
+def float_input(prompt=""):
     while True:
         try:
             return float(input(prompt))
@@ -23,7 +23,7 @@ def float_input(prompt = ""):
 
 # Demande à l'utilisateur l'entrée d'un nombre (entier, décimal, fraction)
 # tant que celui-ci n'est pas valide puis retourne un object Fraction.
-def fraction_input(prompt = ""):
+def fraction_input(prompt=""):
     while True:
         try:
             return Fraction(input(prompt)).limit_denominator()

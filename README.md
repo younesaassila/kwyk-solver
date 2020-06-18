@@ -1,10 +1,20 @@
 # Kwyk Solver
 
-Kwyk Solver est un solveur d'exercices pour le [site web Kwyk](https://www.kwyk.fr/).
+Kwyk Solver est un solveur d'exercices pour le [site web Kwyk.fr](https://www.kwyk.fr/).
 
-Celui-ci est écrit en Python 3.8 et nécessite les modules complémentaires `numpy`, `requests` et `scipy`.
+Cet outil vous aide à résoudre vos devoirs Kwyk. N'hésitez pas à le partager à vos camarades !
 
-## Installation
+Ce solveur est écrit en Python 3.8, lui permettant ainsi de tourner sur une multitude de plateformes dont Windows, macOS et Linux.
+
+Nous encourageons ses utilisateurs à ajouter le support d'exercices pour rendre le programme plus complet (voir la section ci-dessous).
+
+## Contribuer au projet
+
+Ce projet accueille à bras ouverts les contributions de ses utilisateurs. Si vous souhaitez rapporter un bug, suggérer une nouvelle fonctionnalité ou ajouter le support d'un exercice, vous êtes le bienvenu !
+
+Pour plus d'information, veuillez lire le fichier [CONTRIBUTING.md](https://github.com/Yougi3/Kwyk-Solver/blob/master/CONTRIBUTING.md).
+
+## Installation de Kwyk Solver
 
 ### Téléchargement du programme
 
@@ -65,21 +75,3 @@ Tapez simplement le numéro de l'exercice que vous souhaitez résoudre et suivez
 ## Mise à jour du programme
 
 Lorsqu'une mise à jour est disponible, le programme vous en avertira et vous proposera de la télécharger et de l'installer. Vous pouvez refuser la procédure en appuyant sur la touche `Entrée` ou l'accepter en appuyant sur la touche `o` puis `Entrée`.
-
-## Rapports de bugs et demandes d'aide
-
-Pour tout rapport d'erreur ou demande d'aide, veuillez vous rendre dans l'onglet "Issues" de cette page de projet.
-
-## Contribuer au projet
-
-Vous avez la possibilité de contribuer au projet en effectuant un fork du repo puis en proposant vos modifications à l'aide d'une pull request.
-
-Pour plus d'information sur le fonctionnement de Git et de GitHub, nous vous recommandons [la playlist YouTube dédiée à ce topic sur la chaîne The Coding Train (anglais)](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV).
-
-### Ajouter le support d'un exercice
-
-Pour ajouter le support d'un exercice, veuillez :
-
-- Ajouter un fichier dans le dossier `solvers` nommé `solver_`*numéro de l'exercice*`.py`,
-- Importer dans ce fichier les modules nécessaires à sa conception (évitez néanmoins d'ajouter de nouvelles dépendances au programme),
-- Créer une fonction `solve()` dans ce fichier à la suite de ces importations. Celle-ci contient toute la logique du solveur en passant de la récupération de données avec `input()` au traitement des données pour au final afficher les résultats de l'exercice avec `print()`.

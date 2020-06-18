@@ -3,8 +3,7 @@ name: Suggestion
 about: Suggérez une nouvelle fonctionnalité
 title: "[SUGGESTION]"
 labels: enhancement
-assignees: ''
-
+assignees: ""
 ---
 
 **Votre suggestion est-elle en lien avec un problème que vous rencontrez ? Veuillez le décrire**
