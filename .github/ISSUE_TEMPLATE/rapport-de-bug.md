@@ -1,6 +1,6 @@
 ---
 name: Rapport de bug
-about: Créer un rapport de bug
+about: Rapportez un problème
 title: "[BUG]"
 labels: bug
 assignees: ''
