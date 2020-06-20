@@ -4,7 +4,7 @@ import re
 from functions import int_input, rreplace
 
 
-version = "1.5"
+version = "1.6dev"
 print("Kwyk Solver")
 print(f"Version {version}")
 
@@ -33,7 +33,7 @@ updater.file_cleanup()
 
 prompt = "Entrez le numéro de l'exercice : "
 
-# Message d'accueil.
+# Message d'accueil du programme.
 print(f"""
 Un outil open source pour résoudre vos devoirs Kwyk.
 Partagez ce projet avec le monde entier ! (sauf avec vos professeurs ;)
