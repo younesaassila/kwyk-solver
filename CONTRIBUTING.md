@@ -2,6 +2,13 @@
 
 Vous avez la possibilité de contribuer au projet en rapportant un bug, en suggérant une nouvelle fonctionnalité ou en ajoutant le support d'un exercice.
 
+Pour contribuer au projet, vous devez avoir installé le module `pipenv`.
+Celui-ci permet d'enregistrer les dépendances du programme dans le fichier
+`Pipfile.lock`. Ce fichier facilite le développement de Kwyk Solver.
+
+Pour plus d'informations sur `pipenv` rendez-vous à
+[https://github.com/pypa/pipenv](https://github.com/pypa/pipenv).
+
 ## Rapporter un bug ou suggérer une nouvelle fonctionnalité
 
 Pour rapporter un bug ou suggérer une nouvelle fonctionnalité, veuillez vous rendre dans [l'onglet "Issues" et cliquer sur le bouton "New issue"](https://github.com/Yougi3/Kwyk-Solver/issues/new/choose).
@@ -10,7 +17,7 @@ Pour rapporter un bug ou suggérer une nouvelle fonctionnalité, veuillez vous r
 
 Pour ajouter le support d'un exercice, vous aurez besoin d'effectuer un fork du projet Kwyk Solver puis de proposer vos améliorations à l'aide d'une pull request.
 
-Pour plus d'information sur le fonctionnement de Git et de GitHub, nous vous recommandons [la playlist YouTube dédiée à ces sujets sur la chaîne YouTube "The Coding Train" (anglais)](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV).
+Pour plus d'informations sur le fonctionnement de Git et de GitHub, nous vous recommandons [la playlist YouTube dédiée à ces sujets sur la chaîne YouTube "The Coding Train" (anglais)](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV).
 
 Pour ajouter le support d'un exercice, veuillez :
 

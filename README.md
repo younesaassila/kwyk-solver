@@ -12,7 +12,7 @@ Nous encourageons ses utilisateurs à ajouter le support d'exercices pour rendre
 
 Ce projet accueille à bras ouverts les contributions de ses utilisateurs. Si vous souhaitez rapporter un bug, suggérer une nouvelle fonctionnalité ou ajouter le support d'un exercice, vous êtes le bienvenu !
 
-Pour plus d'information, veuillez lire les fichiers [CODE_OF_CONDUCT.md](https://github.com/Yougi3/Kwyk-Solver/blob/master/CODE_OF_CONDUCT.md) et [CONTRIBUTING.md](https://github.com/Yougi3/Kwyk-Solver/blob/master/CONTRIBUTING.md).
+Pour plus d'informations, veuillez lire les fichiers [CODE_OF_CONDUCT.md](https://github.com/Yougi3/Kwyk-Solver/blob/master/CODE_OF_CONDUCT.md) et [CONTRIBUTING.md](https://github.com/Yougi3/Kwyk-Solver/blob/master/CONTRIBUTING.md).
 
 ## Installation de Kwyk Solver
 

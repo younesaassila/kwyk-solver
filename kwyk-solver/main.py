@@ -4,9 +4,15 @@ import re
 from functions import int_input, rreplace
 
 
-version = "1.6dev"
-print("Kwyk Solver")
-print(f"Version {version}")
+version = "1.6"
+
+print(f"""Kwyk Solver
+Version {version}
+
+Un outil open source pour résoudre vos devoirs Kwyk.
+Partagez ce projet avec le monde entier ! (sauf avec vos professeurs)
+Contribuez et ajoutez des exercices en vous rendant à https://github.com/Yougi3/Kwyk-Solver""")
+
 
 # Vérification de la disponibilité d'une nouvelle version.
 # (Cette vérification ne s'effectue que si la version utilisée n'est pas
@@ -31,14 +37,6 @@ else:
 updater.file_cleanup()
 
 
-prompt = "Entrez le numéro de l'exercice : "
-
-# Message d'accueil du programme.
-print(f"""
-Un outil open source pour résoudre vos devoirs Kwyk.
-Partagez ce projet avec le monde entier ! (sauf avec vos professeurs ;)
-Contribuez et ajoutez des exercices en vous rendant sur https://github.com/Yougi3/Kwyk-Solver""")
-
 if os.path.isdir(f"{os.curdir}/kwyk-solver/solvers/"):
     solvers_directory_path = f"{os.curdir}/kwyk-solver/solvers/"
 else:
@@ -59,19 +57,22 @@ for file in os.listdir(solvers_directory_path):
         supported_ex.append(int(solver_filename_match.group(1)))
 # On trie la liste dans l'ordre croissant et on l'affiche à l'utilisateur.
 supported_ex.sort()
-print(
-    f"\nExercices supportés : {rreplace(str(supported_ex), ',', ' et', 1)[1:-1]}.")
+supported_ex_string = rreplace(str(supported_ex), ',', ' et', 1)[1:-1]
+print(f"\nExercices supportés : {supported_ex_string}.")
 
+
+prompt = "Entrez le numéro de l'exercice : "
+separator = f"\n{'-' * (len(prompt) - 1)}\n"
 
 while True:
-    print(f"\n{'-' * (len(prompt) - 1)}\n")
+    print(separator)
     ex = int_input(prompt)
+    print()
     if ex in supported_ex:
-        print()
         try:
             exec(f"from solvers import solver_{ex}")
             exec(f"solver_{ex}.solve()")
         except Exception as e:
-            print(f"\n(!) Une erreur est survenue : {str(e)}.")
+            print(f"(!) Une erreur est survenue : {str(e)}.")
     else:
-        print("\n(!) Exercice non supporté par le solveur.")
+        print("(!) Exercice non supporté par le solveur.")
