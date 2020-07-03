@@ -1,6 +1,6 @@
 # Crédits
 
-- [Younes Aassila](https://github.com/Yougi3)
+- [Younes Aassila](https://github.com/Younes-Asl)
   - Créateur du projet Kwyk Solver
 
 - [Cédric Holocher](https://github.com/cedrichol)

@@ -30,7 +30,7 @@ readMeRequest.onreadystatechange = () => {
 };
 readMeRequest.open(
   "GET",
-  "https://raw.githubusercontent.com/Yougi3/Kwyk-Solver/master/README.md",
+  "https://raw.githubusercontent.com/Younes-Asl/Kwyk-Solver/master/README.md",
   true
 );
 readMeRequest.send();
@@ -40,7 +40,7 @@ readMeRequest.send();
 //#region GitHub button
 
 gitHubButton.addEventListener("click", () => {
-  location.href = "https://github.com/Yougi3/Kwyk-Solver";
+  location.href = "https://github.com/Younes-Asl/Kwyk-Solver";
 });
 
 //#endregion

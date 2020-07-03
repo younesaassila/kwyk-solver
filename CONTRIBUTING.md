@@ -11,7 +11,7 @@ Pour plus d'informations sur `pipenv` rendez-vous à
 
 ## Rapporter un bug ou suggérer une nouvelle fonctionnalité
 
-Pour rapporter un bug ou suggérer une nouvelle fonctionnalité, veuillez vous rendre dans [l'onglet "Issues" et cliquer sur le bouton "New issue"](https://github.com/Yougi3/Kwyk-Solver/issues/new/choose).
+Pour rapporter un bug ou suggérer une nouvelle fonctionnalité, veuillez vous rendre dans [l'onglet "Issues" et cliquer sur le bouton "New issue"](https://github.com/Younes-Asl/Kwyk-Solver/issues/new/choose).
 
 ## Ajouter le support d'un exercice
 
