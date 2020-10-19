@@ -4,7 +4,7 @@ Kwyk Solver est un solveur d'exercices pour le [site web Kwyk.fr](https://www.kw
 
 Cet outil vous aide à résoudre vos devoirs Kwyk. N'hésitez pas à le partager à vos camarades !
 
-Ce solveur est écrit en Python 3.8, lui permettant ainsi de tourner sur une multitude de plateformes dont Windows, macOS et Linux.
+Ce solveur est écrit en Python 3.8 et supporte Windows et macOS.
 
 Nous encourageons ses utilisateurs à ajouter le support d'exercices pour rendre le programme plus complet (voir la section ci-dessous).
 
@@ -32,7 +32,11 @@ Lors de l'installation sur Windows, assurez-vous de cocher la case "Add Python 3
 
 Une fois cette première terminée, ouvrez l'invite de commandes Windows (`cmd.exe`) ou le PowerShell. Sur macOS, ouvrez l'application Terminal.
 
-Tapez la commande suivante : `python --version`
+Tapez la commande suivante :
+
+- Windows : `py --version`
+
+- macOS : `python3 --version`
 
 Si celle-ci vous retourne un numéro de version, comme par exemple `Python 3.8.3`, Python s'est installé avec succès et vous pouvez continuer la procédure. Si vous obtenez une erreur ou un autre message, n'hésitez pas à demander de l'aide en vous rendant dans l'onglet "Issues" de cette page de projet.
 
@@ -54,9 +58,23 @@ Sur macOS, ouvrez l'application Terminal.
 
 Tapez les commandes suivantes :
 
-- `python -m pip install numpy`
-- `python -m pip install requests`
-- `python -m pip install scipy`
+- Windows :
+
+```text
+py -m pip install --upgrade pip
+py -m pip install numpy
+py -m pip install requests
+py -m pip install scipy
+```
+
+- macOS :
+
+```text
+python3 -m pip install --upgrade pip
+python3 -m pip install numpy
+python3 -m pip install requests
+python3 -m pip install scipy
+```
 
 Si vous n'arrivez toujours pas à installer les modules complémentaires requis au fonctionnement du programme, demandez de l'aide dans l'onglet "Issues" de cette page de projet.
 
