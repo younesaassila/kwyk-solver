@@ -8,6 +8,12 @@ Ce solveur est écrit en Python 3.8 et supporte Windows et macOS.
 
 Nous encourageons ses utilisateurs à ajouter le support d'exercices pour rendre le programme plus complet (voir la section ci-dessous).
 
+## Captures d'écran
+
+![Écran d'accueil](https://i.imgur.com/xFdwE7C.png)
+
+![Exemple de résolution d'un exercice](https://i.imgur.com/NOYBdJq.png)
+
 ## Contribuer au projet
 
 Ce projet accueille à bras ouverts les contributions de ses utilisateurs. Si vous souhaitez rapporter un bug, suggérer une nouvelle fonctionnalité ou ajouter le support d'un exercice, vous êtes le bienvenu !
