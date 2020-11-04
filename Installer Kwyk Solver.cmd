@@ -15,6 +15,6 @@ if %ERRORLEVEL% equ 0 (
   py -m pip install requests
   echo » Installation de scipy
   py -m pip install scipy
-  echo » Programme d'installation des modules requis terminé. Si une erreur est survenue, merci de la signaler en créant un rapport de bug à l'adresse : https://github.com/Younes-Asl/Kwyk-Solver/issues
+  echo » Programme d'installation des modules requis terminé. Si une erreur est survenue, merci de la signaler en créant un rapport de bug à l'adresse : https://github.com/younesaassila/Kwyk-Solver/issues
 )
 pause

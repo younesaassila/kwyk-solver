@@ -4,21 +4,21 @@ import re
 from functions import int_input, rreplace
 
 
-version = "2.0.1"
+version = "2.0.2"
 
 print(f"""Kwyk Solver
 Version {version}
 
 Un outil open source pour résoudre vos devoirs Kwyk.
 Partagez ce projet avec le monde entier ! (sauf avec vos professeurs)
-Contribuez et ajoutez des exercices en vous rendant à https://github.com/Younes-Asl/Kwyk-Solver""")
+Contribuez et ajoutez des exercices en vous rendant à https://github.com/younesaassila/Kwyk-Solver""")
 
 
 # Vérification de la disponibilité d'une nouvelle version.
 # (Cette vérification ne s'effectue que si la version utilisée n'est pas
 # une version de développement !)
 if not version.endswith("dev"):
-    update_info_url = "https://younes-asl.github.io/Kwyk-Solver/update_info.json"
+    update_info_url = "https://younesaassila.github.io/Kwyk-Solver/update_info.json"
     update_info = updater.get_update_info(update_info_url)
     if update_info is not None:
         update_version = update_info["version"]
