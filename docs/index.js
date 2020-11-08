@@ -30,7 +30,7 @@ readMeRequest.onreadystatechange = () => {
 };
 readMeRequest.open(
   "GET",
-  "https://raw.githubusercontent.com/younesaassila/Kwyk-Solver/master/README.md",
+  "https://raw.githubusercontent.com/younesaassila/Kwyk-Solver/main/README.md",
   true
 );
 readMeRequest.send();
