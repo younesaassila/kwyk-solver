@@ -4,7 +4,7 @@ import re
 from functions import int_input, rreplace
 
 
-version = "2.0.2"
+version = "2.0.3"
 
 print(f"""Kwyk Solver
 Version {version}
