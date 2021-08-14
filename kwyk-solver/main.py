@@ -11,7 +11,7 @@ Version {version}
 
 Un outil open source pour résoudre vos devoirs Kwyk.
 Partagez ce projet avec le monde entier ! (sauf avec vos professeurs)
-Contribuez et ajoutez des exercices en vous rendant à https://github.com/younesaassila/Kwyk-Solver""")
+Contribuez et ajoutez des exercices en vous rendant à https://github.com/younesaassila/kwyk-solver""")
 
 
 # Vérification de la disponibilité d'une nouvelle version.
