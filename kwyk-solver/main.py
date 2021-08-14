@@ -18,7 +18,7 @@ Contribuez et ajoutez des exercices en vous rendant à https://github.com/younes
 # (Cette vérification ne s'effectue que si la version utilisée n'est pas
 # une version de développement !)
 if not version.endswith("dev"):
-    update_info_url = "https://younesaassila.github.io/Kwyk-Solver/update_info.json"
+    update_info_url = "https://kwyksolver.aassila.com/update.json"
     update_info = updater.get_update_info(update_info_url)
     if update_info is not None:
         update_version = update_info["version"]
