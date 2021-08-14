@@ -3,20 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico" />
     <title>Kwyk Solver</title>
   </head>
   <body>
-    <header>
-      <h1>Kwyk Solver</h1>
-      <p>Un outil open source pour résoudre vos devoirs Kwyk.</p>
+    <main>
+      <h1 class="title">Kwyk Solver</h1>
+      <p class="description">
+        Un outil open source pour résoudre vos devoirs Kwyk.
+      </p>
       <div>
-        <button id="download-button" class="button-fill">Télécharger</button>
-        <button id="github-button">Page GitHub</button>
+        <a id="download-link" class="button fill" href="#">Télécharger</a>
+        <a
+          id="github-link"
+          class="button"
+          href="https://github.com/younesaassila/kwyk-solver"
+        >
+          Page GitHub
+        </a>
       </div>
-    </header>
-    <main id="main"></main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/11.0.0/markdown-it.min.js"></script>
-    <script src="index.js"></script>
+    </main>
+    <script src="app.js"></script>
   </body>
 </html>
