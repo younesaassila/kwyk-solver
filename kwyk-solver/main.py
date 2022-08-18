@@ -4,7 +4,7 @@ import re
 from functions import int_input, rreplace
 
 
-version = "2.0.4"
+version = "2.0.5"
 
 print(f"""Kwyk Solver
 Version {version}
@@ -48,7 +48,7 @@ else:
 # Affichage de la liste des exercices supportés en se basant sur les fichiers
 # présents dans le dossier 'solvers'.
 supported_ex = []
-solver_filename_pattern = "solver_([0123456789]+)\.py"
+solver_filename_pattern = "solver_([0123456789]+)\\.py"
 for file in os.listdir(solvers_directory_path):
     solver_filename_match = re.match(solver_filename_pattern, file)
     if solver_filename_match:
