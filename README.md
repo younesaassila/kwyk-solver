@@ -4,7 +4,7 @@ Kwyk Solver est un solveur d'exercices pour le [site web Kwyk.fr](https://www.kw
 
 Cet outil vous aide à résoudre vos devoirs Kwyk. N'hésitez pas à le partager à vos camarades !
 
-Ce solveur est écrit en Python 3.8 et supporte Windows et macOS.
+Ce solveur est écrit en Python 3.10 et supporte Windows et macOS.
 
 Nous encourageons ses utilisateurs à ajouter le support d'exercices pour rendre le programme plus complet (voir la section ci-dessous).
 
@@ -32,9 +32,9 @@ Une fois téléchargé, pensez à décompresser le dossier ZIP.
 
 ### Installation de Python
 
-Assurez-vous d'avoir installé au préalable Python 3.8 ou ultérieur. Si ce n'est pas encore le cas, rendez-vous sur le [site web officiel de Python](https://www.python.org/downloads/) et téléchargez la version la plus récente correspondant à votre système d'exploitation.
+Assurez-vous d'avoir installé au préalable Python 3.10 ou ultérieur. Si ce n'est pas encore le cas, rendez-vous sur le [site web officiel de Python](https://www.python.org/downloads/) et téléchargez la version la plus récente correspondant à votre système d'exploitation.
 
-Lors de l'installation sur Windows, assurez-vous de cocher la case "Add Python 3.8 to PATH" sur la première page de l'installeur.
+Lors de l'installation sur Windows, assurez-vous de cocher la case "Add Python 3.10 to PATH" sur la première page de l'installeur.
 
 Une fois cette première terminée, ouvrez l'invite de commandes Windows (`cmd.exe`) ou le PowerShell. Sur macOS, ouvrez l'application Terminal.
 
@@ -44,7 +44,7 @@ Tapez la commande suivante :
 
 - macOS : `python3 --version`
 
-Si celle-ci vous retourne un numéro de version, comme par exemple `Python 3.8.3`, Python s'est installé avec succès et vous pouvez continuer la procédure. Si vous obtenez une erreur ou un autre message, n'hésitez pas à demander de l'aide en vous rendant dans l'onglet "Issues" de cette page de projet.
+Si celle-ci vous retourne un numéro de version, comme par exemple `Python 3.10`, Python s'est installé avec succès et vous pouvez continuer la procédure. Si vous obtenez une erreur ou un autre message, n'hésitez pas à demander de l'aide en vous rendant dans l'onglet "Issues" de cette page de projet.
 
 ### Installation des modules requis au fonctionnement du programme
 
