@@ -4,14 +4,16 @@ import re
 from functions import int_input, rreplace
 
 
-version = "2.0.5"
+version = "2.0.6"
 
-print(f"""Kwyk Solver
+print(
+    f"""Kwyk Solver
 Version {version}
 
 Un outil open source pour résoudre vos devoirs Kwyk.
 Partagez ce projet avec le monde entier ! (sauf avec vos professeurs)
-Contribuez et ajoutez des exercices en vous rendant à https://github.com/younesaassila/kwyk-solver""")
+Contribuez et ajoutez des exercices en vous rendant à https://github.com/younesaassila/kwyk-solver"""
+)
 
 
 # Vérification de la disponibilité d'une nouvelle version.
@@ -22,10 +24,16 @@ if not version.endswith("dev"):
     update_info = updater.get_update_info(update_info_url)
     if update_info is not None:
         update_version = update_info["version"]
-        if (update_version.strip() != version.strip()):
+        if update_version.strip() != version.strip():
             print(
-                f"\n/!\\ Une nouvelle mise à jour est disponible (version {update_version}).")
-            if input("Souhaitez-vous que le programme se mette à jour ? (o/N) : ").strip().lower() == "o":
+                f"\n/!\\ Une nouvelle mise à jour est disponible (version {update_version})."
+            )
+            if (
+                input("Souhaitez-vous que le programme se mette à jour ? (o/N) : ")
+                .strip()
+                .lower()
+                == "o"
+            ):
                 updater.download_and_install(update_info["url"])
             else:
                 print("Mise à jour ignorée.")
@@ -57,7 +65,7 @@ for file in os.listdir(solvers_directory_path):
         supported_ex.append(int(solver_filename_match.group(1)))
 # On trie la liste dans l'ordre croissant et on l'affiche à l'utilisateur.
 supported_ex.sort()
-supported_ex_string = rreplace(str(supported_ex), ',', ' et', 1)[1:-1]
+supported_ex_string = rreplace(str(supported_ex), ",", " et", 1)[1:-1]
 print(f"\nExercices supportés : {supported_ex_string}.")
 
 
