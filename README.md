@@ -58,9 +58,9 @@ Si celui-ci vous indique que les modules complémentaires requis se sont correct
 
 #### Méthode 2
 
-Sur Windows, ouvrez l'invite de commandes (`cmd.exe`) ou le PowerShell.
+Sur Windows, ouvrez l'invite de commandes (`cmd.exe`) ou le PowerShell [dans le dossier décompressé](https://old.reddit.com/r/Windows10/comments/13c08tm/easily_open_powershell_or_cmd_in_any_folder_with/?tl=fr).
 
-Sur macOS, ouvrez l'application Terminal.
+Sur macOS, ouvrez l'application Terminal [dans le dossier décompressé](https://old.reddit.com/r/MacOS/comments/1j2hc1n/opening_the_terminal_from_the_folder_i_am_at/?tl=fr).
 
 Tapez les commandes suivantes :
 
@@ -68,18 +68,14 @@ Tapez les commandes suivantes :
 
 ```text
 py -m pip install --upgrade pip
-py -m pip install numpy
-py -m pip install requests
-py -m pip install scipy
+py -m pip install -r requirements.txt
 ```
 
 - macOS :
 
 ```text
 python3 -m pip install --upgrade pip
-python3 -m pip install numpy
-python3 -m pip install requests
-python3 -m pip install scipy
+python3 -m pip install -r requirements.txt
 ```
 
 Si vous n'arrivez toujours pas à installer les modules complémentaires requis au fonctionnement du programme, demandez de l'aide dans l'onglet "Issues" de cette page de projet.
