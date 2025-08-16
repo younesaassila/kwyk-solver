@@ -20,7 +20,7 @@ def solve():
     dx = int_input("Dx = ")
     dy = int_input("Dy = ")
     dz = int_input("Dz = ")
-    
+
     AB = np.array([bx - ax, by - ay, bz - az])
     CD = np.array([dx - cx, dy - cy, dz - cz])
     m1 = np.array([[AB[0], -CD[0]], [AB[1] - AB[2], -CD[1] - (-CD[2])]])
@@ -30,4 +30,3 @@ def solve():
     y = Fraction(AB[1] * t1 + ay).limit_denominator()
     z = Fraction(AB[2] * t1 + az).limit_denominator()
     print(f"Le point d'intersection des deux droites est M({x}; {y}; {z})")
-

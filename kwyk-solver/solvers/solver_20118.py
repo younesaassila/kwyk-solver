@@ -12,7 +12,6 @@ def solve():
     a = Fraction(int_input("Nx = ")).limit_denominator()
     b = Fraction(int_input("Ny = ")).limit_denominator()
     c = Fraction(int_input("Nz = ")).limit_denominator()
-    
-    d = Fraction(- (a * ax) - (b * ay) - (c * az)).limit_denominator()
-    print(f"Une équation cartésienne de P est {a} x + {b} y + {c} z + {d} = 0")
 
+    d = Fraction(-(a * ax) - (b * ay) - (c * az)).limit_denominator()
+    print(f"Une équation cartésienne de P est {a} x + {b} y + {c} z + {d} = 0")

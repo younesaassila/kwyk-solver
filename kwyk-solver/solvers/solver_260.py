@@ -14,14 +14,19 @@ def solve():
     b2 = int_input("b = ")
     c2 = int_input("c = ")
     d2 = int_input("d = ")
-    
+
     # Cas du plan :
-    if ((a1 / a2) == (b1 / b2) == (c1 / c2) == (d1 / d2)):
-        print(f"Les équations sont équivalentes, le système représente donc un plan de vecteur normal n({a1}; {b1}; {c1})")
+    if (a1 / a2) == (b1 / b2) == (c1 / c2) == (d1 / d2):
+        print(
+            f"Les équations sont équivalentes, le système représente donc un plan de vecteur normal n({a1}; {b1}; {c1})"
+        )
     # Cas de la droite :
     else:
         # La droite a pour vecteur directeur un vecteur perpendiculaire au deux vecteurs normaux (produit vectoriel)
         vector_product = np.cross((a1, b1, c1), (a2, b2, c2))
-        print(f"Les équations sont différentes, le système représente donc une droite (ou l'ensemble vide)")
-        print(f"Un vecteur directeur de cette droite est u({vector_product[0]}; {vector_product[1]}; {vector_product[2]})")
-
+        print(
+            f"Les équations sont différentes, le système représente donc une droite (ou l'ensemble vide)"
+        )
+        print(
+            f"Un vecteur directeur de cette droite est u({vector_product[0]}; {vector_product[1]}; {vector_product[2]})"
+        )

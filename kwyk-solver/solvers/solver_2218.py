@@ -17,4 +17,3 @@ def solve():
     else:
         result = f"ln({p})/({- a})"
     print(f"\nLa paramètre λ est égal à {result}")
-

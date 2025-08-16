@@ -5,4 +5,3 @@ from solvers import solver_28037
 
 def solve():
     solver_28037.solve()
-

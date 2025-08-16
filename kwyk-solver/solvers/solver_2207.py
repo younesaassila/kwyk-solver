@@ -13,10 +13,9 @@ def solve():
     while not choix in [1, 2]:
         choix = int_input("1 ou 2 ? ")
     y = float_input("y = ")
-    
+
     if choix == 1:
-        result = Fraction(abs(y - a) * (1 / (b - a))).limit_denominator()  
+        result = Fraction(abs(y - a) * (1 / (b - a))).limit_denominator()
     else:
         result = Fraction(abs(b - y) * (1 / (b - a))).limit_denominator()
     print(f"\nLa probabilité P est de {result}")
-

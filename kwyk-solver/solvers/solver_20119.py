@@ -24,7 +24,6 @@ def solve():
     a = Fraction(vector_product[0]).limit_denominator()
     b = Fraction(vector_product[1]).limit_denominator()
     c = Fraction(vector_product[2]).limit_denominator()
-    d = Fraction(- (a * ax) - (b * ay) - (c * az)).limit_denominator()
-    
-    print(f"Une équation cartésienne de P est {a} x + {b} y + {c} z + {d} = 0")
+    d = Fraction(-(a * ax) - (b * ay) - (c * az)).limit_denominator()
 
+    print(f"Une équation cartésienne de P est {a} x + {b} y + {c} z + {d} = 0")

@@ -12,10 +12,9 @@ def solve():
         choix = int_input("1 ou 2 ? ")
     a = fraction_input("a = ")
 
-    exponent = Fraction(- p * a).limit_denominator()
+    exponent = Fraction(-p * a).limit_denominator()
     if choix == 1:
-        result = f"1 - e^({exponent})"   
+        result = f"1 - e^({exponent})"
     else:
         result = f"e^({exponent})"
     print(f"\nLa probabilité P est de {result}")
-

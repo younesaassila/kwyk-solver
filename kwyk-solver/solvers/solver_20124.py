@@ -20,4 +20,3 @@ def solve():
             print("Les deux plans sont orthogonaux")
         else:
             print("Les deux plans NE sont PAS orthogonaux")
-

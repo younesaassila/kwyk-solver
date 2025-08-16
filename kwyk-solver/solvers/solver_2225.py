@@ -8,8 +8,7 @@ def solve():
     u = float_input("u = ")
     v = float_input("v = ")
 
-    exponent_u = Fraction(- p * u).limit_denominator()
-    exponent_v = Fraction(- p * v).limit_denominator()
+    exponent_u = Fraction(-p * u).limit_denominator()
+    exponent_v = Fraction(-p * v).limit_denominator()
     result = f"e^({exponent_u}) - e^({exponent_v})"
     print(f"\nLa probabilité P est de {result}")
-

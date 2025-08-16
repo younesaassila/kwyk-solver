@@ -12,7 +12,6 @@ def solve():
     x2 = int_input("x = ")
     y2 = int_input("y = ")
     z2 = int_input("z = ")
-    
-    y1 = Fraction(float(- (x1 * x2) - (z1 * z2)) / float(y2)).limit_denominator()
-    print(f"La coordonnée en y doit être égale à {y1}")
 
+    y1 = Fraction(float(-(x1 * x2) - (z1 * z2)) / float(y2)).limit_denominator()
+    print(f"La coordonnée en y doit être égale à {y1}")

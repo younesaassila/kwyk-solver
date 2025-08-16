@@ -8,4 +8,3 @@ def solve():
 
     e = Fraction(1 / p).limit_denominator()
     print(f"\nL'espérance mathématique de p est {e}")
-
