@@ -2,12 +2,7 @@
 
 Vous avez la possibilité de contribuer au projet en rapportant un bug, en suggérant une nouvelle fonctionnalité ou en ajoutant le support d'un exercice.
 
-Pour contribuer au projet, vous devez avoir installé le module `pipenv`.
-Celui-ci permet d'enregistrer les dépendances du programme dans le fichier
-`Pipfile.lock`. Ce fichier facilite le développement de Kwyk Solver.
-
-Pour plus d'informations sur `pipenv` rendez-vous à
-[https://github.com/pypa/pipenv](https://github.com/pypa/pipenv).
+Pour contribuer au projet, vous devez avoir installé les dépendances de développement en utilisant la commande suivante : `pip install -r requirements-dev.txt`.
 
 ## Rapporter un bug ou suggérer une nouvelle fonctionnalité
 
